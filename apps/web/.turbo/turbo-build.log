@@ -1,0 +1,30 @@
+
+
+> web@0.1.0 build /Users/gwalchmai/dev/day-one/apps/web
+> next build
+
+[33m[1m⚠[22m[39m Warning: Next.js inferred your workspace root, but it may not be correct.
+ We detected multiple lockfiles and selected the directory of /Users/gwalchmai/dev/day-one/pnpm-workspace.yaml as the root directory.
+ To silence this warning, set `turbopack.root` in your Next.js config, or consider removing one of the lockfiles if it's not needed.
+   See https://nextjs.org/docs/app/api-reference/config/next-config-js/turbopack#root-directory for more information.
+ Detected additional lockfiles: 
+   * /Users/gwalchmai/dev/day-one/apps/web/pnpm-workspace.yaml
+
+[1m[38;2;173;127;168m▲ Next.js 16.2.0[39m[22m (Turbopack)
+
+[37m[1m [22m[39m Creating an optimized production build ...
+[32m[1m✓[22m[39m Compiled successfully in 8.1s
+[?25l[37m[1m [22m[39m Running TypeScript  [36m.[39m[2K[1G[37m[1m [22m[39m Running TypeScript  [36m..[39m[2K[1G[37m[1m [22m[39m Running TypeScript  [36m...[39m[2K[1G[37m[1m [22m[39m Running TypeScript  [36m.[39m[2K[1G[37m[1m [22m[39m Running TypeScript  [36m..[39m[2K[1G[37m[1m [22m[39m Running TypeScript  [36m...[39m[2K[1G[37m[1m [22m[39m Running TypeScript  [36m.[39m[2K[1G[37m[1m [22m[39m Running TypeScript  [36m..[39m[2K[1G[37m[1m [22m[39m Running TypeScript  [36m...[39m[2K[1G[37m[1m [22m[39m Running TypeScript  [36m.[39m[2K[1G[37m[1m [22m[39m Running TypeScript  [36m..[39m[31mFailed to type check.
+[39m
+[36m./src/app/page.tsx[39m:[33m20[39m:[33m22[39m
+[31m[1mType error[22m[39m: Parameter 'event' implicitly has an 'any' type.
+
+  [90m18 |[0m       </h1>
+  [90m19 |[0m       <ul className=[32m"grid grid-cols-1 gap-12 lg:grid-cols-2"[0m>
+[31m[1m>[0m [90m20 |[0m         {events.map((event) => (
+  [90m   |[0m                      [31m[1m^[0m
+  [90m21 |[0m           <li
+  [90m22 |[0m             className=[32m"bg-white dark:bg-gray-800 p-4 rounded-lg shadow-sm dark:shadow-gray...[0m
+  [90m23 |[0m             key={event._id}
+[2K[1G[?25hNext.js build worker exited with code: 1 and signal: null
+[?25l [36m.[39m [?25h[41m[30m ELIFECYCLE [39m[49m [31mCommand failed with exit code 1.[39m
