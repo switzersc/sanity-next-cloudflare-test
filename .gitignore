@@ -2,5 +2,3 @@ node_modules
 .DS_STORE
 apps/studio/.env
 apps/web/.env
-apps/web/package-lock.json
-package-lock.json
